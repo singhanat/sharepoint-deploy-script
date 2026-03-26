@@ -1,0 +1,82 @@
+{
+  "export": {
+    "siteUrl": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+    "excludeSiteUsers": true,
+    "includeHiddenLists": false,
+    "includeSystemLists": false,
+    "exportLists": [
+      "Exports_MMO",
+      "MMO_RichTextImages",
+      "MLN_BD_MMO_ApprovalSteps",
+      "MLN_BD_MMO_CC",
+      "MLN_BD_MMO_Contracts",
+      "MLN_BD_MMO_Contracts_Pictures",
+      "MLN_BD_MMO_DEV_MS_Department",
+      "MLN_BD_MMO_MailTemplates",
+      "MLN_BD_MMO_Memorandums",
+      "MLN_BD_MMO_Memorandums_Pictures",
+      "MLN_BD_MMO_MetaData",
+      "MLN_BD_MMO_UserRoles"
+    ],
+    "exportDataLists": [
+      "MLN_BD_MMO_DEV_MS_Department",
+      "MLN_BD_MMO_MailTemplates",
+      "MLN_BD_MMO_MetaData"
+    ],
+    "dataPageSize": 2000
+  },
+  "import": {
+    "targetSiteUrl": "YYYYYYYYYYYYYYYYYYY",
+    "sourceFolder": "MSG-PRJ-UAT_PowerApp",
+    "deleteIfExists": true,
+    "skipProtectedLists": true,
+    "importLists": [
+      "Exports_MMO",
+      "MMO_RichTextImages",
+      "MLN_BD_MMO_ApprovalSteps",
+      "MLN_BD_MMO_CC",
+      "MLN_BD_MMO_Contracts",
+      "MLN_BD_MMO_Contracts_Pictures",
+      "MLN_BD_MMO_DEV_MS_Department",
+      "MLN_BD_MMO_MailTemplates",
+      "MLN_BD_MMO_Memorandums",
+      "MLN_BD_MMO_Memorandums_Pictures",
+      "MLN_BD_MMO_MetaData",
+      "MLN_BD_MMO_UserRoles"
+    ],
+    "importDataLists": [
+      "MLN_BD_MMO_DEV_MS_Department",
+      "MLN_BD_MMO_MailTemplates",
+      "MLN_BD_MMO_MetaData"
+    ],
+    "permissions": {
+      "defaultListPermission": {
+        "applyDefault": true,
+        "stopInheriting": true,
+        "copyRoleAssignments": true,
+        "clearExisting": false,
+        "assignments": [
+          {
+            "groupName": "MMO-User",
+            "permission": "Edit"
+          }
+        ]
+      },
+      "manageListPermissions": [
+        {
+          "listTitle": "Exports_MMO",
+          "stopInheriting": true,
+          "copyRoleAssignments": true,
+          "clearExisting": false,
+          "assignments": [
+            {
+              "groupName": "MMO-User",
+              "permission": "Edit"
+            }
+          ]
+        }
+      ]
+    },
+    "dataBatchSize": 200
+  }
+}
